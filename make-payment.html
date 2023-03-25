@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="payment.js" defer></script>
+  <title>Make Payment</title>
+</head>
+
+<body class="bg-[#121212]">
+  <img src="./Assets/fampay-icon.svg" class="w-3/4 max-w-md block mx-auto my-12" />
+  <div class=" block my-[10vh] h-fit">
+    <div class="from-[#d5890e] to-[#eaf206d4] bg-gradient-to-br pt-12 pb-12">
+      <form action="proceed-payment.html" method="post" class="bg-[#121212] w-4/5 h-fit mx-auto pb-5 px-20 rounded-3xl mt-12 main-container">
+        <h1 class="text-white text-5xl text-center block mx-auto my-20 pt-10">
+          Make Payment
+        </h1>
+        <div class="flex gap-3">
+          <label class="font-semibold text-3xl text-[#f5a623] ml-auto" for="amount">Amount to be paid</label>
+          <input type="number" min="1" id="amount" name="amount"
+            class="rounded-md h-10 focus:border-red-800 active:border-red-400 hover:border-orange-400 border-2 px-2 overflow-auto text-orange-800 font-semibold text-lg selection:bg-[#f5a623] selection:text-[#121212]" />
+          <p class="font-semibold text-3xl text-[#f5a623] mr-auto">&#8377;</p>
+        </div>
+
+        <div id="splitting" class="mx-auto w-fit">
+          <div class="flex gap-3">
+            <p class="text-2xl text-[#f5a623] mt-10">Do you want to split the amount?</p>
+            <input type="checkbox" class="w-8 h-8 mt-10" id="dutch" />
+          </div>
+        </div>
+        <button id="proceed"
+          class="w-fit mx-auto block col-span-2 bg-[#f5a623] text-[#121212] border-2 border-transparent rounded-full px-10 py-2 text-lg font-semibold hover:border-[#f5a623] hover:text-[#f5a623] hover:bg-[#121212] transition-all duration-450 mt-14 mb-8">
+          Proceed
+        </button>
+        <p class="block w-fit mx-auto text-white font-bold mt-5 text-xl">
+        </p>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
