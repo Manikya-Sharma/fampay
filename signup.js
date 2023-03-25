@@ -4,17 +4,17 @@ btn.addEventListener("click", (e) => {
   const fName = document.getElementById("first-name").value;
   const lName = document.getElementById("last-name").value;
   const dob = document.getElementById("dob").value;
-  const age = document.getElementById("age").value;
+  const userName = document.getElementById("username").value;
   const password = document.getElementById("password").value;
   const cPwd = document.getElementById("cPwd").value;
   const email = document.getElementById("email").value;
   if (cPwd !== password) {
     alert("The passwords do not match! Please enter correct password");
   }
-  localStorage.setItem("fname", fName);
+  localStorage.setItem("fName", fName);
   localStorage.setItem("lName", lName);
   localStorage.setItem("dob", dob);
-  localStorage.setItem("age", age);
+  localStorage.setItem("userName", userName);
   localStorage.setItem("password", password);
   localStorage.setItem("email", email);
   //* friends can dutch, they will be sent notification
