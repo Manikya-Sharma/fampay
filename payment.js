@@ -3,11 +3,8 @@ dutchCheckBox.addEventListener("change", () => {
   if (dutchCheckBox.checked) {
     const div = document.createElement("div");
     div.id = "num-people";
-    const lbl = document.createElement("label");
     const num = document.createElement("input");
     div.classList.add("flex", "gap-3");
-    lbl.classList.add("text-2xl", "text-[#f5a623]", "mt-10", "ml-auto");
-    lbl.textContent = "Enter the number of people";
     num.setAttribute("type", "number");
     num.id = "num";
     num.classList.add(
@@ -18,17 +15,18 @@ dutchCheckBox.addEventListener("change", () => {
       "hover:border-orange-400",
       "border-2",
       "px-2",
-      "mt-10",
+      "mt-5",
       "overflow-auto",
       "text-orange-800",
       "font-semibold",
       "text-lg",
       "selection:bg-[#f5a623]",
       "selection:text-[#121212]",
-      "mr-auto"
+      "mx-auto",
+      "w-[15rem]"
     );
+    num.setAttribute("placeholder", "Enter the number of people")
     document.querySelector("#splitting").insertAdjacentElement("afterend", div);
-    div.appendChild(lbl);
     div.appendChild(num);
     num.addEventListener("change", () => {
       const amt = document.getElementById("amount").value;
