@@ -13,6 +13,6 @@ btn.addEventListener("click", (e) => {
     console.log(password);
     console.log(localStorage.getItem("password"));
   } else {
-    location.href = "logged-in.html";
+    location.href = "./logged-in.html";
   }
 });

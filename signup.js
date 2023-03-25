@@ -19,5 +19,5 @@ btn.addEventListener("click", (e) => {
   localStorage.setItem("email", email);
   //* friends can dutch, they will be sent notification
 
-  location.href = "login.html";
+  location.href = "./login.html";
 });
