@@ -116,7 +116,8 @@
           <div class="text leading-10">
             <div class="block w-fit mx-auto text-center">
               <h1 class="block mx-auto font-bold text-5xl mb-5 w-5/6">
-                Personalized UPI and card for ______
+                Personalized UPI and card for
+                <span class="auto-type text-[#f5a623]"></span>
               </h1>
               <p class="md:mx-0 text-2xl text-[#9a9a9a] mb-8">
                 Say hello to a world of secure payments
@@ -255,6 +256,14 @@
         </div>
       </div>
     </main>
-    <script></script>
+    <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed(".auto-type", {
+        strings: ["teens", "students", "young adults", "GenZ"],
+        typeSpeed: 50,
+        backSpeed: 50,
+        loop: true,
+      });
+    </script>
   </body>
 </html>
