@@ -47,5 +47,5 @@ const proceedButton = document.querySelector("#proceed");
 proceedButton.addEventListener("click", (e) => {
   e.preventDefault();
   localStorage.setItem("numPeople", document.getElementById("num").value)
-  location.href = "proceed-payment.html";
+  location.href = "./proceed-payment.html";
 });
