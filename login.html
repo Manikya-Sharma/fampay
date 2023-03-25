@@ -1,66 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <script src="./script.js"></script>
-    <title>Login to FamPay</title>
-  </head>
-  <body class="bg-[#121212] overflow-hidden">
-    <img
-      src="./Assets/fampay-icon.svg"
-      class="w-3/4 max-w-md block mx-auto my-12"
-    />
-    <div class="block my-[10vh] h-fit">
-      <div class="from-[#d5890e] to-[#eaf206d4] bg-gradient-to-br pt-12 pb-12">
-        <form
-          action=""
-          method=""
-          class="bg-[#121212] max-w-md w-5/6 h-fit mx-auto py-5 px-20 rounded-3xl mt-12"
-        >
-          <div class="flex flex-col gap-2 mb-10 mt-3">
-            <label
-              class="font-semibold text-3xl mx-auto text-[#f5a623]"
-              for="acc-id"
-              >Account ID</label
-            >
-            <input
-              type="text"
-              id="acc-id"
-              name="acc-id"
-              class="rounded-md h-10 focus:border-red-800 active:border-red-400 hover:border-orange-400 border-2 px-2 overflow-auto text-orange-800 font-semibold text-lg selection:bg-[#f5a623] selection:text-[#121212]"
-            />
-          </div>
-          <div class="flex flex-col gap-2 mb-10">
-            <label
-              class="font-semibold text-3xl mx-auto text-[#f5a623]"
-              for="password"
-              >Password</label
-            >
-            <input
-              type="password"
-              id="password"
-              name="password"
-              class="rounded-md h-10 focus:border-red-800 active:border-red-400 hover:border-orange-400 border-2 px-2 overflow-auto text-orange-800 font-semibold text-lg selection:bg-[#f5a623] selection:text-[#121212]"
-            />
-          </div>
-          <button
-            id="submit"
-            class="w-fit mx-auto block bg-[#f5a623] text-[#121212] border-2 border-transparent rounded-full px-10 py-2 text-lg font-semibold hover:border-[#f5a623] hover:text-[#f5a623] hover:bg-[#121212] transition-all duration-450"
-          >
-            Next
-          </button>
-        </form>
-        <p class="block w-fit mx-auto text-black mt-5 text-lg">
-          Don't have an account?
-          <a
-            class="py-2 text-red-900 hover:text-red-700 hover:underline cursor-pointer font-semibold"
-            >Sign-Up</a
-          >!
-        </p>
-      </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="./script.js"></script>
+  <title>Login to FamPay</title>
+</head>
+
+<body class="bg-[#121212] overflow-hidden">
+  <img src="./Assets/fampay-icon.svg" class="w-3/4 max-w-md block mx-auto my-12" />
+  <div class="block my-[10vh] h-fit">
+    <div class="from-[#d5890e] to-[#eaf206d4] bg-gradient-to-br pt-12 pb-12">
+      <form action="" method="" class="bg-[#121212] max-w-md w-5/6 h-fit mx-auto py-5 px-20 rounded-3xl mt-12">
+        <div class="flex flex-col gap-2 mb-10 mt-3">
+          <label class="font-semibold text-3xl mx-auto text-[#f5a623]" for="acc-id">Account ID</label>
+          <input type="text" id="acc-id" name="acc-id"
+            class="rounded-md h-10 focus:border-red-800 active:border-red-400 hover:border-orange-400 border-2 px-2 overflow-auto text-orange-800 font-semibold text-lg selection:bg-[#f5a623] selection:text-[#121212]" />
+        </div>
+        <div class="flex flex-col gap-2 mb-10">
+          <label class="font-semibold text-3xl mx-auto text-[#f5a623]" for="password">Password</label>
+          <input type="password" id="password" name="password"
+            class="rounded-md h-10 focus:border-red-800 active:border-red-400 hover:border-orange-400 border-2 px-2 overflow-auto text-orange-800 font-semibold text-lg selection:bg-[#f5a623] selection:text-[#121212]" />
+        </div>
+        <button id="submit"
+          class="w-fit mx-auto block bg-[#f5a623] text-[#121212] border-2 border-transparent rounded-full px-10 py-2 text-lg font-semibold hover:border-[#f5a623] hover:text-[#f5a623] hover:bg-[#121212] transition-all duration-450">
+          Next
+        </button>
+      </form>
+      <p class="block w-fit mx-auto text-black mt-5 text-lg">
+        Don't have an account?
+        <a class="py-2 text-red-900 hover:text-red-700 hover:underline cursor-pointer font-semibold">Sign-Up</a>!
+      </p>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
