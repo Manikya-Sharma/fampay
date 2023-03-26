@@ -9,3 +9,11 @@ window.onscroll = function () {
   }
   prevScrollPos = currentScrollPos;
 };
+
+document.getElementById("payment").addEventListener("click", ()=>{
+  location.href = "./make-payment.html"
+})
+
+document.getElementById("getUPI").addEventListener("click", ()=>{
+  location.href = "./sign-up.html"
+})
