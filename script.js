@@ -9,3 +9,7 @@ window.onscroll = function () {
   }
   prevScrollPos = currentScrollPos;
 };
+;-
+document.getElementById("getUPI").addEventListener("click", ()=>{
+  location.href="./sign-up.html"
+})
